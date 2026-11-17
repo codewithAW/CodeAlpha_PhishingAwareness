@@ -1,0 +1,362 @@
+import type { Question } from "../types";
+export const questions: Question[] = [
+  {
+    id: "1-1",
+    topic: 0,
+    prompt: "A grant email knows your student ID. What does that establish?",
+    options: [
+      "The sender has that detail",
+      "The grant is genuine",
+      "The attachment is approved",
+    ],
+    correct: 0,
+    why: "Personal details can be copied or exposed elsewhere.",
+  },
+  {
+    id: "1-2",
+    topic: 0,
+    prompt: "A message tailored to one project lead is an example of what?",
+    options: [
+      "Routine bulk advertising",
+      "Spear phishing",
+      "Device encryption",
+    ],
+    correct: 1,
+    why: "Personalized targeting distinguishes spear phishing.",
+  },
+  {
+    id: "1-3",
+    topic: 0,
+    prompt: "Which request needs independent verification?",
+    options: [
+      "An agenda you retrieved from your calendar",
+      "A saved local reminder",
+      "An unexpected payroll account change",
+    ],
+    correct: 2,
+    why: "Changes involving money carry consequences even when phrased politely.",
+  },
+  {
+    id: "1-4",
+    topic: 0,
+    prompt:
+      "A familiar charity asks for donations after a flood. How should you donate?",
+    options: [
+      "Find the charity through a known channel",
+      "Use the first payment code in the message",
+      "Call the number in the message for proof",
+    ],
+    correct: 0,
+    why: "Independent navigation avoids relying on payment details supplied by an impersonator.",
+  },
+  {
+    id: "1-5",
+    topic: 0,
+    prompt: "Which detail best explains why a fake invitation works?",
+    options: [
+      "It has an unfamiliar color palette",
+      "It fits an event the recipient expects",
+      "It arrived on a weekday",
+    ],
+    correct: 1,
+    why: "Realistic timing can make a request seem routine. Verify the invitation through your calendar.",
+  },
+  {
+    id: "2-1",
+    topic: 1,
+    prompt:
+      "A vendor changes bank details inside a real email thread. What comes next?",
+    options: [
+      "Trust the thread history",
+      "Call your existing vendor contact",
+      "Reply asking if the sender is genuine",
+    ],
+    correct: 1,
+    why: "A compromised mailbox can preserve real conversation history.",
+  },
+  {
+    id: "2-2",
+    topic: 1,
+    prompt: "The sender name says IT Support. What should you inspect?",
+    options: [
+      "Only the initials in the avatar",
+      "The time zone in the footer",
+      "Full sender address and the requested action",
+    ],
+    correct: 2,
+    why: "Display names are editable. Address and context offer more evidence.",
+  },
+  {
+    id: "2-3",
+    topic: 1,
+    prompt: "A colleague emails an unexpected file. Which check helps?",
+    options: [
+      "Ask through your known work chat",
+      "Open it to read its title",
+      "Forward it to your personal inbox",
+    ],
+    correct: 0,
+    why: "A separate trusted channel can confirm whether the colleague intended the share.",
+  },
+  {
+    id: "2-4",
+    topic: 1,
+    prompt: "Which statement about spelling is accurate?",
+    options: [
+      "Perfect grammar establishes legitimacy",
+      "Errors alone cannot classify an email",
+      "One typo proves malicious intent",
+    ],
+    correct: 1,
+    why: "Both legitimate and deceptive messages can contain polished writing or errors.",
+  },
+  {
+    id: "2-5",
+    topic: 1,
+    prompt:
+      "An email redirects replies to an unrelated mailbox. Why inspect it?",
+    options: [
+      "It proves the email is encrypted",
+      "It confirms delivery to your employer",
+      "Responses may reach a different party",
+    ],
+    correct: 2,
+    why: "A reply-to mismatch can divert information. Confirm through an independently known contact.",
+  },
+  {
+    id: "3-1",
+    topic: 2,
+    prompt: "Who controls desk.orbit.example.notice.example in this exercise?",
+    options: ["orbit.example", "desk.orbit.example", "notice.example"],
+    correct: 2,
+    why: "The familiar name is a subdomain of notice.example.",
+  },
+  {
+    id: "3-2",
+    topic: 2,
+    prompt: "What does HTTPS establish on a lookalike site?",
+    options: [
+      "An encrypted connection to that host",
+      "The claimed brand approved it",
+      "Every file on it is safe",
+    ],
+    correct: 0,
+    why: "A lookalike host can obtain its own certificate.",
+  },
+  {
+    id: "3-3",
+    topic: 2,
+    prompt: "A short link hides a payroll destination. What is safest?",
+    options: [
+      "Trust it if it starts with HTTPS",
+      "Open the payroll portal from a bookmark",
+      "Look for payroll in the short code",
+    ],
+    correct: 1,
+    why: "A short link does not reveal its eventual destination.",
+  },
+  {
+    id: "3-4",
+    topic: 2,
+    prompt: "Which part of https://press.example/orbit.example is the host?",
+    options: ["orbit.example", "https", "press.example"],
+    correct: 2,
+    why: "Text after the first path slash does not change the host.",
+  },
+  {
+    id: "3-5",
+    topic: 2,
+    prompt:
+      "A portal looks identical to your bank. What provides better evidence?",
+    options: [
+      "Access through your previously verified bank app",
+      "Matching colors",
+      "A copyright notice",
+    ],
+    correct: 0,
+    why: "Interface elements are easy to copy. Use a trusted entry point.",
+  },
+  {
+    id: "4-1",
+    topic: 3,
+    prompt:
+      "A director demands a confidential gift-card purchase. What should you do?",
+    options: [
+      "Verify through the normal approval channel",
+      "Buy a small card first",
+      "Ask the sender for another selfie",
+    ],
+    correct: 0,
+    why: "Secrecy and unusual payment methods bypass financial controls.",
+  },
+  {
+    id: "4-2",
+    topic: 3,
+    prompt:
+      "An unexpected caller threatens immediate account closure. What is the safest response?",
+    options: [
+      "Read out the code before time expires",
+      "End the call and contact the provider independently",
+      "Use the callback number they dictate",
+    ],
+    correct: 1,
+    why: "An independent callback takes control of the verification channel.",
+  },
+  {
+    id: "4-3",
+    topic: 3,
+    prompt:
+      "A voice note sounds like a relative. How should you confirm an emergency?",
+    options: [
+      "Treat the voice as proof",
+      "Pay first to avoid delay",
+      "Contact the relative or another known person separately",
+    ],
+    correct: 2,
+    why: "A recognizable voice alone cannot establish identity.",
+  },
+  {
+    id: "4-4",
+    topic: 3,
+    prompt:
+      "A visitor says a manager waived access checks. What should reception do?",
+    options: [
+      "Follow the normal visitor approval procedure",
+      "Trust the manager’s name",
+      "Lend a temporary staff badge",
+    ],
+    correct: 0,
+    why: "A claimed exception needs confirmation through established access controls.",
+  },
+  {
+    id: "4-5",
+    topic: 3,
+    prompt:
+      "A caller insists colleagues must stay out of a payment decision. What tactic is present?",
+    options: ["Encryption", "Isolation", "Routine reconciliation"],
+    correct: 1,
+    why: "Isolation prevents another person from checking the story.",
+  },
+  {
+    id: "5-1",
+    topic: 4,
+    prompt: "A text asks for a parcel redelivery fee. Where should you check?",
+    options: [
+      "The text’s payment page",
+      "The carrier app you already use",
+      "The sender’s profile photo",
+    ],
+    correct: 1,
+    why: "Check the shipment independently using your original order details.",
+  },
+  {
+    id: "5-2",
+    topic: 4,
+    prompt: "A bank number appears on caller ID. What can you conclude?",
+    options: [
+      "The caller controls your bank account",
+      "The caller is a bank employee",
+      "The displayed number can be spoofed",
+    ],
+    correct: 2,
+    why: "Use the number on your card or in the official app.",
+  },
+  {
+    id: "5-3",
+    topic: 4,
+    prompt: "A QR sticker covers a printed parking sign. What should you do?",
+    options: [
+      "Use an independently verified payment method",
+      "Trust the sticker because it scans",
+      "Pay once to test it",
+    ],
+    correct: 0,
+    why: "Replacement stickers can redirect payments.",
+  },
+  {
+    id: "5-4",
+    topic: 4,
+    prompt:
+      "A voice caller asks for your one-time sign-in code. What is safest?",
+    options: [
+      "Read half the code",
+      "End the call and report through a trusted channel",
+      "Ask for the caller’s job title first",
+    ],
+    correct: 1,
+    why: "A one-time code can authorize someone else’s login.",
+  },
+  {
+    id: "5-5",
+    topic: 4,
+    prompt: "What can a QR preview tell you?",
+    options: [
+      "Whether the operator is honest",
+      "Who placed the physical sticker",
+      "The encoded address your device proposes to open",
+    ],
+    correct: 2,
+    why: "The preview helps inspect the destination but does not verify the physical source.",
+  },
+  {
+    id: "6-1",
+    topic: 5,
+    prompt: "You entered a reused password on a suspicious site. What now?",
+    options: [
+      "Wait for a second email",
+      "Delete only browser history",
+      "Change it on affected real services and report promptly",
+    ],
+    correct: 2,
+    why: "Password reuse can expose multiple accounts. Review sessions and recovery settings.",
+  },
+  {
+    id: "6-2",
+    topic: 5,
+    prompt:
+      "An MFA prompt arrives while you are not signing in. What should you do?",
+    options: [
+      "Deny it and report the unexpected prompt",
+      "Approve it to stop notifications",
+      "Read the number to an unsolicited caller",
+    ],
+    correct: 0,
+    why: "Unexpected prompts may indicate someone is attempting access.",
+  },
+  {
+    id: "6-3",
+    topic: 5,
+    prompt: "Why are passkeys useful against phishing?",
+    options: [
+      "They prevent all fraud",
+      "They are bound to the intended site",
+      "They make reporting unnecessary",
+    ],
+    correct: 1,
+    why: "Origin binding helps prevent authenticating to an impostor site.",
+  },
+  {
+    id: "6-4",
+    topic: 5,
+    prompt: "After a possible account takeover, why review active sessions?",
+    options: [
+      "Sessions identify every attacker by name",
+      "It restores deleted emails",
+      "An existing session may survive a password change",
+    ],
+    correct: 2,
+    why: "Session revocation can remove continued access. Follow the service’s response process.",
+  },
+  {
+    id: "6-5",
+    topic: 5,
+    prompt: "What helps a security team investigate a suspicious email?",
+    options: [
+      "Report the original through the approved channel",
+      "Forward it to the whole office",
+      "Delete all details immediately",
+    ],
+    correct: 0,
+    why: "Approved reporting preserves evidence and limits further exposure.",
+  },
+];
